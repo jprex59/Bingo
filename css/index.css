@@ -108,6 +108,7 @@ i {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
+		overflow: hidden;
 	}
 	.bgWhite {
 		position: absolute;
