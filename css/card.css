@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #04a8f4;
+	font-family: "Roboto", sans-serif !important;
+	min-height: 100vh;
+	position: relative;
+}
+
+.fa-undo {
+	color: #fff;
+	font-size: 25px;
+	transition: all 0.5s;
+	cursor: pointer;
+	animation: animate 0.5s linear 1;
+}
+
+.fa-undo:hover {
+	transform: rotate(360deg);
+}
+
+.return_home {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+@keyframes animate {
+	0% {
+		transform: rotate(90deg);
+	}
+	25% {
+		transform: rotate(180deg);
+	}
+	50% {
+		transform: rotate(270deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.card {
+	width: 300px !important;
+	margin: 15px !important;
+}
+.content {
+	text-align: center !important;
+}
