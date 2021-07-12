@@ -6,7 +6,6 @@ body {
 	background-color: #04a8f4;
 	font-family: "Roboto", sans-serif !important;
 	min-height: 100vh;
-	position: relative;
 }
 
 .fa-undo {
@@ -18,13 +17,14 @@ body {
 }
 
 .fa-undo:hover {
-	transform: rotate(360deg);
+	transform: rotate(-360deg);
 }
 
 .return_home {
-	position: absolute;
+	position: fixed;
 	top: 20px;
 	left: 20px;
+	z-index: 9999999;
 }
 .container {
 	display: flex;
@@ -35,24 +35,74 @@ body {
 
 @keyframes animate {
 	0% {
-		transform: rotate(90deg);
+		transform: rotate(-90deg);
 	}
 	25% {
-		transform: rotate(180deg);
+		transform: rotate(-180deg);
 	}
 	50% {
-		transform: rotate(270deg);
+		transform: rotate(-270deg);
 	}
 
 	100% {
-		transform: rotate(360deg);
+		transform: rotate(-360deg);
 	}
 }
 
 .card {
-	width: 300px !important;
+	width: 350px !important;
 	margin: 15px !important;
+	cursor: pointer;
+	box-shadow: 2px 2px 20px rgb(20 20 22 / 20%);
+	transition: all 0.5s;
+}
+.card:hover {
+	box-shadow: 2px 2px 20px rgb(20 20 22 / 50%);
+	border-radius: 12px;
+}
+.card-content {
+	font-weight: bold !important;
+}
+
+.done {
+	filter: grayscale(1);
+	background-color: rgb(177, 175, 175);
 }
 .content {
 	text-align: center !important;
+}
+@media all and (max-width: 1700px) {
+	.card {
+		width: 300px !important;
+	}
+}
+@media all and (max-width: 1410px) {
+	.card {
+		width: 250px !important;
+	}
+}
+@media all and (max-width: 850px) {
+	.card {
+		width: 210px !important;
+	}
+}
+@media all and (max-width: 720px) {
+	.card {
+		width: 270px !important;
+	}
+}
+@media all and (max-width: 602px) {
+	.card {
+		width: 220px !important;
+	}
+}
+@media all and (max-width: 500px) {
+	.card {
+		width: 300px !important;
+	}
+}
+@media all and (max-width: 340px) {
+	.card {
+		width: 250px !important;
+	}
 }
