@@ -54,7 +54,7 @@ body {
 	margin: 15px !important;
 	cursor: pointer;
 	box-shadow: 2px 2px 20px rgb(20 20 22 / 20%);
-	transition: all 0.5s;
+	transition: all 0.2s;
 }
 .card:hover {
 	box-shadow: 2px 2px 20px rgb(20 20 22 / 50%);
