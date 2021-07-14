@@ -31,9 +31,3 @@ button_cancel.addEventListener("click", () => {
 	container_home.style.backgroundColor = "#36bbf7";
 	body.style.backgroundColor = "#04a8f4";
 });
-
-/*************tilt js************ */
-VanillaTilt.init(document.querySelectorAll(".card"), {
-	max: 25,
-	speed: 400,
-});

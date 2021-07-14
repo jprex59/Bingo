@@ -516,8 +516,8 @@ var VanillaTilt = (function () {
 
 /*************tilt js************ */
 VanillaTilt.init(document.querySelectorAll(".card"), {
-	max: 25,
+	max: 7,
 	speed: 400,
-	glare: true,
+	glare: false,
 	"max-glare": 1 /*brillance*/,
 });
